@@ -1,6 +1,6 @@
 package database;
 
 public interface UserDAO {
-    void retrieveLifePoints(int userId, int lifePoints);
+    void decreaseLifePoints(int userId, int lifePoints);
     String getName(int userId);
 }

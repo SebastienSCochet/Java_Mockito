@@ -19,7 +19,7 @@ public class MainPresenter {
     }
 
     public void loseLifePoints(int lifePoints) {
-        userDAO.retrieveLifePoints(1, lifePoints);
+        userDAO.decreaseLifePoints(1, lifePoints);
         mainView.displayText(lifePoints + " life points lost.");
     }
 }

@@ -1,7 +1,7 @@
 package database;
 
 public class UserDAOImpl implements UserDAO {
-    public void retrieveLifePoints(int userId, int lifePoints) {
+    public void decreaseLifePoints(int userId, int lifePoints) {
 
     }
 

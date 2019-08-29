@@ -50,7 +50,7 @@ public class MainTest {
     public void whenUserKickedThenLoseLifePoints() {
         mainViewImpl.onManKicked();
         verify(mainPresenter, atLeastOnce()).loseLifePoints(anyInt());
-        verify(userDAO, atLeastOnce()).retrieveLifePoints(anyInt(), anyInt());
+        verify(userDAO, atLeastOnce()).decreaseLifePoints(anyInt(), anyInt());
     }
 
     @Test
